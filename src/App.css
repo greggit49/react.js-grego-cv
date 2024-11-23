@@ -1,0 +1,446 @@
+/* CSS pour le menu de navigation */
+.navbar {
+  background-color: #333;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5em;
+  padding-left: 5%;
+}
+.left {
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: white;
+}
+
+.propos {
+  box-shadow: 5px 5px 5px #dbd9d9, -5px -5px 5px #dbd9d9;
+}
+.pro {
+  justify-content: normal;
+}
+
+.Jumbotron {
+  background-image: url(./img/img/hero-bg-mobile.jpg);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+  background-position: center; /* Positionne l'image au centre */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image */
+  height: 750px;
+  position: relative; /* Hauteur de votre élément */
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Pour les écrans de taille moyenne */
+@media screen and (min-width: 768px) {
+  .Jumbotron {
+    background-image: url(./img/img/hero-bg-tablette.jpg);
+  }
+}
+
+/* Pour les écrans de grande taille */
+@media screen and (min-width: 1024px) {
+  .Jumbotron {
+    background-image: url(./img/img/hero-bg.jpg);
+  }
+}
+
+.Jumbotron h1 {
+  font-size: 2.5em;
+
+  position: relative; /* Pour positionner ce contenu par rapport à l'élément parent */
+  z-index: 1;
+}
+
+.Jumbotron p {
+  font-size: 1.2em;
+
+  position: relative; /* Pour positionner ce contenu par rapport à l'élément parent */
+  z-index: 1;
+}
+
+.Jumbotron Button {
+  margin-top: 20px;
+  position: relative; /* Pour positionner ce contenu par rapport à l'élément parent */
+  z-index: 1;
+}
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.Container .Row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Col {
+  padding: 20px;
+  width: 45%;
+}
+
+.Container .Col h2 {
+  margin-bottom: 20px;
+}
+
+.Container .Col p {
+  line-height: 1.6;
+}
+
+.Container .Col img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Container .Col ProgressBar {
+  margin-bottom: 10px;
+}
+.Col1 {
+  margin-right: 20px;
+}
+.about {
+  height: 30%;
+  width: 40%;
+}
+.progress-bar-custom1 {
+  background-color: red !important;
+  width: 90%; /* Remplacez #votre-couleur par le code de couleur que vous voulez */
+}
+
+.progress-bar-custom {
+  background-color: aqua !important;
+  width: 80%; /* Remplacez #votre-couleur par le code de couleur que vous voulez */
+}
+.progress-bar-custom2 {
+  background-color: rgb(255, 162, 0) !important;
+  width: 70%; /* Remplacez #votre-couleur par le code de couleur que vous voulez */
+}
+
+.progress-bar-custom3 {
+  background-color: green !important;
+  width: 60%; /* Remplacez #votre-couleur par le code de couleur que vous voulez */
+}
+
+.progress-bar-custom4 {
+  background-color: blue !important;
+  width: 50%; /* Remplacez #votre-couleur par le code de couleur que vous voulez */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  padding-top: 10px;
+}
+
+/* Style pour le copyright */
+.footer .copy {
+  text-align: center;
+  flex: 0 0 100%;
+  background-color: #333;
+  padding: 20px;
+}
+.copyr {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.fond {
+  position: relative;
+  background-image: url(./img/img/contact-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px;
+  width: 100%;
+}
+
+.fond::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 105, 255, 0.5);
+  z-index: 0;
+}
+
+.fond1 {
+  background-color: white;
+  padding: 25px;
+  position: relative;
+  z-index: 3;
+}
+.reseau {
+  display: flex;
+}
+.mess {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Définissez la largeur de votre image */
+  height: 20px; /* Définissez la hauteur de votre image */
+  background-size: cover;
+  background-image: url("./img/icons8-vers-l'avant-48.png");
+}
+a {
+  color: #333;
+}
+hr {
+  border: none;
+  height: 2px;
+  background-color: #0d6efd;
+  opacity: 1;
+}
+.hr1 {
+  width: 25%; /* Changez cela selon la largeur que vous voulez */
+  height: 3px; /* Changez cela selon la couleur que vous voulez */
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: left;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+.ima {
+  display: block;
+  margin: 0 auto;
+}
+.cards {
+  margin-bottom: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  margin-bottom: 10px; /* Ajustez la hauteur selon vos besoins */
+}
+.block {
+  margin-bottom: 10px;
+}
+
+.card .ima {
+  max-width: 100%;
+  height: auto;
+}
+
+.input {
+  margin: 5px;
+}
+
+.boutton {
+  display: flex;
+  justify-content: center; /* Ajustez cette valeur comme nécessaire */
+}
+
+.publi {
+  width: 100%;
+}
+.btn {
+  padding: 10px 20px;
+  margin-top: 10px;
+  z-index: 10000;
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+.ser {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.serv {
+  padding: 30px;
+}
+
+.imag {
+  width: 100%;
+}
+.col {
+  margin-bottom: 10px;
+}
+
+/* Pour les écrans de tablette */
+@media (max-width: 768px) {
+  .footer-column {
+    flex-direction: column;
+  }
+}
+
+/* Pour les écrans de mobile */
+@media (max-width: 480px) {
+  .footer-column {
+    flex-direction: column;
+  }
+}
+
+/* Pour les écrans de tablette */
+@media (max-width: 768px) {
+  .Row {
+    flex-direction: column;
+  }
+  .Container {
+    width: 100%;
+    margin: 0;
+  }
+  .Col {
+    width: 100%;
+  }
+}
+
+/* Pour les écrans de mobile */
+@media (max-width: 480px) {
+  .Row {
+    flex-direction: column;
+  }
+  .Container {
+    width: 100%;
+    margin: 0;
+  }
+  .Col {
+    width: 100%;
+  }
+}
+
+/* Pour les écrans de tablette */
+@media (max-width: 768px) {
+  .contact-row {
+    flex-direction: column;
+  }
+  .fond {
+    padding: 50px;
+  }
+}
+
+/* Pour les écrans de mobile */
+@media (max-width: 480px) {
+  .contact-row {
+    flex-direction: column;
+  }
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400; /* Poids de 400 pour le corps du texte */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600; /* Poids de 600 pour les titres et les balises <strong> */
+}
+
+.accor {
+  margin-bottom: 20px;
+}
+
+.imag {
+  width: 100%;
+}
+
+.back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #555; /* Dark background */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+.back-to-top:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.scroll-to-top {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+}
+
+.scroll-to-top div {
+  /* Hidden by default */
+  background-color: #555; /* Dark background */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  border-radius: 50%; /* Circular button */
+  padding: 10px; /* Some padding */
+  margin: 10px; /* Some margin */
+  cursor: pointer; /* Add a mouse pointer on hover */
+}
+
+.scroll-to-top div:hover {
+  background-color: #298eff; /* Darken the background color on hover */
+}
+
+/* Show the button when it is visible */
+.scroll-to-top div.show {
+  display: block;
+}
